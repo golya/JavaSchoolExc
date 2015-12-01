@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Name Game</title>
+  </head>
+  <body>
+    <h1>The Name Game</h1>
+    <script type="text/javascript">
+      //name game
+      //plays around with users name
+
+
+      var firstName = ""; //ha stringet fogunk tárolni a változóban akkor így deklaráljuk
+      var lastName ="";
+      var numLetters = 0; // ha pedig értéket fogunk tárolni a változóban akkor pedig így
+
+      firstName= prompt("Hi, What's your first name?", "");
+      alert("That's a nice name, " + firstName);
+      alert("I think I'll shout it: " +firstName.toUpperCase()); //.toUpperCase egy method amiből számtalan van a Js-ben, minden betűt nagybetűnek jelenít meg
+      lastName= prompt("So what's your last name, " +firstName + "?");
+      alert("Oh." +firstName + "" + lastName + ".");
+      alert("Sometimes called" +lastName+ ", " + firstName);
+      numLetters= firstName.lenght + lastName.lenght;
+      alert("Did you know there are " + numLetters + "letters in your name?");
+
+    </script>
+  </body>
+</html>
