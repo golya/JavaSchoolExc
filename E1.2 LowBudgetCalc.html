@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Low Budget Calculator</title>
+  </head>
+  <body>
+    <h1>Low Budget Calculator</h1>
+    <h3>The Task:</h3>
+    <p>
+      Write a program that asks the user for two numbers, adds them up,
+      and returns the result to the user.
+    </p>
+      <script type="text/javascript">
+
+        <!--Declarations-->
+        var firstNumber= 0;
+        var secondNumber= 0;
+
+
+        firstNumber=prompt("Give me please the first number: ");
+        secondNumber=prompt("Now please, the second one:");
+
+        //firstNumber=eval(firstNumber);
+        //secondNumber=eval(secondNumber);
+        <!-- Nem tudom miért de nem működött az összeadás , csak string ként értelmezte a változókat
+        ezért próbáltam meg "az eval" sort beletenni, hátha így menni fog. Végül nem jöttem rá hogy mi segített
+        mert megpróbáltam lefuttatni a firefoxban és ott tökéletesen működött,
+        ugyanakkor továbbra sem értem hogy a Chrome-ban miért nem megy-->
+
+        var addsResult= firstNumber + secondNumber; //jobban oda kell figyelnem a vátozók neveinek megválasztására
+
+        alert("The result is:" +addsResult );
+      </script>
+  </body>
+</html>

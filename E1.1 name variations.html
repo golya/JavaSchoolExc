@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Give me your name</title>
+  </head>
+  <body>
+    <h1>Give me your name</h1>
+    <h3>The task:</h3>
+    <p>
+      Write a JavaScript program that will ask the user for his or her first name,
+      last name and middle initial. Return them back in the order of last name, first name
+      and middle initial. Then in first name, middle initial and last name format.
+    </p>
+      <script type="text/javascript">
+
+      <!-- Declarations-->
+        var firstName= "";
+        var lastName=  "";
+        var middleInitial= "";
+
+        firstName= prompt("Whats your first name? ", "  ");
+        lastName= prompt("And whats your last name " +firstName+ " ?");
+        middleInitial= prompt("And finally, whats your middle initial " +firstName+ " " +lastName+ " ?");
+        alert("Your name is: " +lastName+ " " +firstName+ " " +middleInitial+ ". ") //first task
+        alert("Your name is: " +firstName+ " " +middleInitial+ " " +lastName+ ". "); //second task
+
+      </script>
+  </body>
+</html>
