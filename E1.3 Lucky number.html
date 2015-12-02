@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lucky Number</title>
+  </head>
+  <body>
+    <h1>Lucky Number</h1>
+    <h3>The Task:</h3>
+    <p>
+      Have a program ask the user his or her name and shoe size. Determine the users "lucky number"
+      by multiplying the number of letters in his or her name by the shoe size. Return the results.
+    </p>
+
+      <script type="text/javascript">
+
+        var userFirstname= "";
+        var userLastname= "";
+        var shoeSize= 0;
+
+        userFirstname=prompt("Whats your first name");
+        alert(userFirstname.length); // Nagyon fontos hogy a "lenght" nem ugynaz mint a "length"!!!
+        userLastname=prompt("Whats your last name");
+        alert(userLastname.length);
+        shoeSize=prompt("And finally can you tell me your shoe size?");
+
+
+        var result= ( userFirstname.length + userLastname.length ) * shoeSize;
+
+        alert("Your lucky number is: " +result);
+
+
+
+
+      </script>
+
+  </body>
+</html>
