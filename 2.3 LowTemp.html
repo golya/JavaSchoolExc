@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Low Temp</title>
+
+      <script type="text/javascript">
+
+        var temp= 0;
+        var perfectTemp= 65;
+
+        temp=Math.floor(Math.random()* 100) + 1;
+
+        //Először a Math.random() értékelődik ki majd az itt generált értket
+        //szorozza meg a gép 100-al, majd ezt követően hozzáad egyet és legvégül pedig
+        //a lebegőpontos számot egésszé alakítja
+
+        alert("It's  " +temp+ "degrees outside. ");
+
+        if(temp < perfectTemp) {
+          alert("Wear a sweater!!!");
+          }
+          else {
+            alert("It's hot!!");
+        }//end if
+
+
+      </script>
+  </head>
+  <body>
+    <h1>Low Temp Program</h1>
+    <h3>Demonstrates the basic IF statement</h3>
+
+  </body>
+</html>

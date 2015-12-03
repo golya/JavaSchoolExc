@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Many Temps</title>
+    <script type="text/javascript">
+
+      var temp = 0;
+
+      temp= Math.floor(Math.random() * 100 ) + 1;
+      alert("It's " +temp+ "degrees outside. ");
+
+      if (temp < 70 ) {
+        if (temp < 30 ){
+          alert("Wear a jacket!");
+          } else {
+            alert("Wear a sweater");
+        }//end if 30
+      } else {
+        if (temp > 85 ) {
+          alert("Wear a bathing suit!!");
+          }else {
+            alert("Wear short sleeves");
+        }//end if 85
+      }//end if 70
+
+    </script>
+  </head>
+  <body>
+    <h1>Many Temps</h1>
+    <h3>Demonstrates the IF-ELSE structure</h3>
+  </body>
+</html>
