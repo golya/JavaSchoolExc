@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Do you know the Bro'?</title>
+
+    <script type="text/javascript">
+
+      var answer = "";
+      var score = 0;
+      var correctAns = "";
+
+      //Első kérdés
+      answer=prompt("Milyen színű a Kalcsi?" );
+      if (answer == (correctAns="kék")) {
+        score++;
+        alert("Helyes válasz! Pontjaid: " +score );
+      } else {
+        alert("A válaszod helytelen! (kérlek használj ékezeteket)");
+      }
+
+      //Második kérdés
+      answer=prompt("Hány kezed van?" );
+      if (answer == (correctAns="2")) {
+        score++;
+        alert("Helyes válasz! Pontjaid: " +score );
+      } else {
+        alert("Őszintén sajnálom! (szám formátum az elfogadott)");
+      }
+
+      //Harmadik kérdés
+      answer=prompt("Szerinted ez a program jó??" );
+      if (answer == (correctAns="igen")) {
+        score++;
+        alert("Helyes válasz! És nagyon köszönöm! Pontjaid: " +score );
+      } else {
+        alert("A válaszod helytelen! De most komolyan??? :S");
+      }
+
+      //Negyedik kérdés
+      answer=prompt("Ki az előadója a Sorrow is a sage című számnak?" );
+      if (answer == (correctAns="strongarm")) {
+        score++;
+        alert("Helyes válasz!Meg vagy dícsérve Bro'!!! Pontjaid: " +score );
+      } else {
+        alert("A válaszod helytelen! Irány a Spotify!!! ");
+      }
+
+      //Ötödik kérdés
+      answer=prompt("Mentő kérdés!!! Melyik kezemben van a Dió?" );
+      if (answer == (correctAns="bal")) {
+        score++;
+        alert("Szép találat!!! Te ilyen médium szerűség vagy? Pontjaid: " +score );
+      } else {
+        alert("A válaszod helytelen! Ezt bebuktad öccssséééém! ");
+      }
+
+    </script>
+
+
+  </head>
+  <body>
+    <h1>Quiz Program</h1>
+    <h3>Task:</h3>
+    <p>
+      Write a simple quiz program that asks the user five questions.
+      Keep track of how often the user answers correctly, and given
+      the user score at the end of the quiz.
+    </p>
+
+  </body>
+</html>
