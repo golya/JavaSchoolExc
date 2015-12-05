@@ -6,7 +6,10 @@
 
     <script type="text/javascript">
 
-        setTimeout(function(){ alert("Hello"); }, (Math.floor(Math.random() * 1000000 )));
+        var timeElement= 0;
+
+        timeElement= Math.floor(Math.random() * 10000 ) + 1;//ez a sor generálja a véletlen számokat
+        setTimeout(function(){ alert("Hello"); }, timeElement); //ez pedig az időzítő funkció a véletlen szám generátor álltal adott paraméterrel
 
     </script>
   </head>
