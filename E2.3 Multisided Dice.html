@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multisided Dice</title>
+
+      <script type="text/javascript">
+
+      var rollRaw = 0;
+      var rollBigger = 0;
+      var rollInt = 0;
+      var rollFinal = 0;
+      var result = "";
+      var userChoice = 0;
+
+      userChoice=prompt("Hány oldalas kockát szeretnél használni?")
+      rollRaw=Math.random(); //generál egy számot 0 és 1 között
+      rollBigger=rollRaw * userChoice;
+      rollInt=Math.floor(rollBigger); //Ez a Math (obj) floor (method) -ja a lebegőpontos változót egésszé alakítja
+      rollFinal=rollInt + 1; //ezzel a trükkel érjük el hogy ne 0-x között legyen a szám, hanem 1-x között
+
+      result= "rollRaw " +rollRaw+ "\n";
+      result += "rollBigger " +rollBigger+ "\n";
+      result += "rollInt " +rollInt+ "\n";
+      result += "rollFinal " +rollFinal+ "\n";
+
+      alert(result);
+
+
+      </script>
+  </head>
+  <body>
+    <h1>Multisided Dice</h1>
+      <h3>Task:</h3>
+        <p>
+          Certain types of games use multisided dice. Write a program that asks
+          the user how many sided he or she wants, then rolls a die with that
+          sides and returns the result.
+        </p>
+
+  </body>
+</html>
