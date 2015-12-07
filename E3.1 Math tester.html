@@ -5,11 +5,21 @@
     <title>Math tester</title>
       <script type="text/javascript">
 
-        var result = 5;
+
+
+
+        var numA = 0;
+        var numB = 0;
         var answer = 0;
+        var result = 0;
+
+        numA = Math.floor(Math.random()*100 ) ;
+        numB = Math.floor(Math.random()*100 ) ;
+        result = numA + numB;
+
 
         while ( answer != result ) {
-          answer = prompt("Mennyi 2+3 összege?");
+          answer = prompt("Mennyi " + numA+ " és " +numB+  " összege?");
 
             if ( answer == result ) {
               alert("A válaszod helyes!");
@@ -27,6 +37,12 @@
         <p>
           Write a program that asks the user for the answer to 2+3. Your program should keep asking
           the question until the user enters the correct answer.
+
+      <h3>Task:</h3>
+        <h4>This code including the E3.2 exercise!!!</h4>
+        <p>
+          Change the precending program so that it generates the number to add randomly.
+        </p>
         </p>
 
   </body>
