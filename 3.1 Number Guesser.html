@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The number guesser</title>
+      <script type="text/javascript">
+
+        var guess = 50;
+        var target = 0;
+        var turns = 0;
+        var msg = "";
+
+        target = Math.floor(Math.random() * 100) +1;
+        //alert(target):
+
+        msg = "I'm thinking of a number between 1 andd 100. \n";
+        msg += "Guess my number, and I'll tell if it's too high, \n";
+        msg += "too low, or correct.  Try to guess in the fewest turns";
+        alert(msg);
+
+        guess = eval(prompt("What is your guess?", guess));
+
+        while (guess != target) {
+          turns++;
+          if (guess > target) {
+            guess = eval(prompt(turns + ".    Too high!! Next guess?", guess));
+          } //end if
+
+          if (guess < target) {
+            guess = prompt(turns + ". Too low!! Next guess?", guess);
+          } //end if
+
+          if (guess == target) {
+            msg = "YOU WIN !!! \n";
+            msg += "It took you \n";
+            msg += turns+ "turns! ";
+            alert(msg);
+          } //end if
+
+        } //end while
+        
+      </script>
+  </head>
+  <body>
+    <h1>The number guesser</h1>
+
+  </body>
+</html>
