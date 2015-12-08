@@ -12,6 +12,11 @@
         var numB = 0;
         var answer = 0;
         var result = 0;
+        var counter = 0;
+
+        for (var i = 0; i < 5; i++) {
+        ++counter;
+
 
         numA = Math.floor(Math.random()*100 ) ;
         numB = Math.floor(Math.random()*100 ) ;
@@ -19,31 +24,36 @@
 
 
         while ( answer != result ) {
-          answer = prompt("Mennyi " + numA+ " és " +numB+  " összege?");
+          answer = prompt("Mennyi " + numA+ " és " +numB+  " összege?  " +counter+ ". kérdés");
 
             if ( answer == result ) {
               alert("A válaszod helyes!");
 
             } else {
               alert("A válaszod helytelen kérlek számold újra");
-            } // 2. if vége
+            } // if vége
           } //while vége
-
+        } //for vége
       </script>
   </head>
   <body>
     <h1>Math tester</h1>
-      <h3>Task:</h3>
+      <h3>Task E3.1:</h3>
         <p>
           Write a program that asks the user for the answer to 2+3. Your program should keep asking
           the question until the user enters the correct answer.
-
-      <h3>Task:</h3>
-        <h4>This code including the E3.2 exercise!!!</h4>
+        </p>
+      <h3>Task E3.2:</h3>
         <p>
           Change the precending program so that it generates the number to add randomly.
         </p>
+
+      <h3>Task E3.3:</h3>
+        <p>
+          Modify this program so it gives a total of five random math problems,
+          but repeats each one until the user gets a right answer.
         </p>
+
 
   </body>
 </html>
