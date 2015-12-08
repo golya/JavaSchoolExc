@@ -9,6 +9,10 @@
         var target = 0;
         var turns = 0;
         var msg = "";
+        var playAgain = "y";
+
+        while (playAgain == "y") {
+
 
         target = Math.floor(Math.random() * 100) +1;
         //alert(target):
@@ -35,14 +39,21 @@
             msg += "It took you \n";
             msg += turns+ "turns! ";
             alert(msg);
+            playAgain = prompt("Akarsz még egyet játszani? Akkor nyomj egy (y)-t! Ellenkező esetben pedig más billentyűt");
           } //end if
 
         } //end while
-        
+      } //fő while vége
       </script>
   </head>
   <body>
     <h1>The number guesser</h1>
+      <h3>Task E3.4:</h3>
+        <p>
+          Improve the number guesser so that it asks the user whteher he or she
+          wants to play again. Repeat the entire game until  the user indicates
+          that he or she is done.
+        </p>
 
   </body>
 </html>
