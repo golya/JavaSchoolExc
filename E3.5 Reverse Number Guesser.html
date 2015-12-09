@@ -25,7 +25,51 @@
     fontos hogy minden esetben felfele kerekítsen a gép!!!-->
     <script type="text/javascript">
 
+        var minTip = 1;
+        var maxTip = 100;
+        var tipContainer = 50;
+        var playerAns = " ";
+        var msg = " ";
+        var roundCounter = 0;
 
+
+        msg = "Gondolj egy számra 1 és 100 között! \n";
+        msg += "Ha az általam tippelt szám nagyobb akkor nyomd meg a (H) betűt \n";
+        msg += "Ha pedig kissebb akkor kérlek nyomd meg a  (L) betűt, ha pedig ";
+        msg += "Megeggyezik akkor pedig a (C) betűt"
+        alert(msg);
+
+
+
+      while (playerAns != "c" && playerAns!= "C") {
+        ++roundCounter;
+        playerAns = prompt("Az általad választott szám a(z): " +tipContainer+ " ?" );
+
+
+        switch (playerAns) {
+          case "h":
+          case "H": //ez az ág kezeli azt ha magasabb a tipp a gondolt számnál
+            maxTip = tipContainer;
+            tipContainer = Math.floor((maxTip + minTip) / 2);
+            //alert(tipContainer); //debug elem
+            break;
+
+          case "l":
+          case "L": //ez az ág kezeli ha alacsonyabb a tipp a gondolt számnál
+            minTip = tipContainer;
+            tipContainer = Math.floor((maxTip + minTip) / 2);
+            //alert(tipContainer); //debug elem
+            break;
+
+          case "c":
+          case "C":
+            alert("Ez könnyű volt! Köszönöm a játékot! Próbálkozások száma:  " +roundCounter );
+            break;
+
+          default:
+            alert(" H = Magasabb a tipp ; L = alacsonyabb a tipp ; C = eltaláltam a számot ");
+        } //switch vége
+      } //while vége
 
     </script>
   </head>
