@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Name Grabber</title>
+      <script type="text/javascript">
+
+        function copyName() {
+          var userName = document.myForm.txtName.value;
+          var greeting = "Hi there.  ";
+          greeting += userName;
+          greeting += "!";
+          document.myForm.txtGreeting.value = greeting;
+        } // end copyName
+      </script>
+  </head>
+  <body>
+    <center>
+      <h1>Name Grabber<br></h1>
+      <form name = myForm>
+
+      <table border= 1 >
+      <tr>
+        <td>Please type your name: </td>
+        <td><input type="text" name="txtName" value=""></td>
+      </tr>
+      </table>
+
+  </body>
+</html>
