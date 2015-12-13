@@ -5,6 +5,7 @@
     <title>Name Grabber</title>
       <script type="text/javascript">
 
+      <!-- Általában a függvényeket a header be deklaráljuk-->
         function copyName() {
           var userName = document.myForm.txtName.value;
           var greeting = "Hi there.  ";
@@ -22,7 +23,21 @@
       <table border= 1 >
       <tr>
         <td>Please type your name: </td>
-        <td><input type="text" name="txtName" value=""></td>
+        <td><input type="text" name="txtName" ></td>
+      </tr>
+
+      <tr>
+        <td col colspan=2><center>
+          <input type="button" value="ckick me" onclick="copyName()">
+        </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan=2><center>
+          <input type="text" name="txtGreeting">
+        </center>
+        </td>
       </tr>
       </table>
 
