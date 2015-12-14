@@ -5,9 +5,16 @@
     <title>Name Grabber</title>
       <script type="text/javascript">
 
-      <!-- Általában a függvényeket a header be deklaráljuk-->
+      //Általában a függvényeket a header be deklaráljuk
         function copyName() {
           var userName = document.myForm.txtName.value;
+
+          //úgy kell rá tekinteni mint egy elérési útra. A lényege ennek a sornak hogy
+          //txtName értékét helyezi át a userName-be.
+          //document objektumnak vagy egy myForm nevű tulajdonsága.
+          // a Myform-nak van egy txtName -nevű tulajdonsága ami valójában egy text box
+          //És a txtName értékét "value" érjük el ezzel az úttal ami tartalmazza a lényegi információt -->
+
           var greeting = "Hi there.  ";
           greeting += userName;
           greeting += "!";
