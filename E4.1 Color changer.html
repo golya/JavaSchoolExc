@@ -6,24 +6,38 @@
 
       <script type="text/javascript">
 
-        var colorF = prompt("What's your favorite color?");
+        //var colorF = prompt("What's your favorite color?"); //4.1 edition
 
           function colorPicker() {
-            document.bgColor= colorF;
+            document.bgColor= document.myForming.colorF.value;
             var msg="Your welcome!"
           }
       </script>
   </head>
   <body>
     <h1>The Color changer</h1>
-      <h3>Task:</h3>
+      <h3>Task 4.1s:</h3>
         <p>
           Write a program that uses a prompt to ask the user's favorite color,
           then changes the form's background to that color.
         </p>
+      <h3>Task 4.2:</h3>
+        <p>
+          Modify the precending program so that the user types the color into a
+          text box and then clicks a button to get the color.
+        </p>
 
-        <script type="text/javascript">
-          colorPicker();
-        </script>
+        <form name=myForming>
+          <tr>
+            <td>What's your favrite color?</td>
+            <td><input type=text name=colorF></td>
+          </tr>
+
+          <tr>
+            <td colspan=2 ><left>
+              <input type="button"  value="click me" onClick=colorPicker()>
+            </td>
+          </tr>
+        </form>
   </body>
 </html>
