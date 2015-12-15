@@ -3,6 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Mad Lib</title>
+
+      <script type="text/javascript">
+
+        function makeML() {
+
+          //get variables from form
+          var person = window.document.myForm.txtPerson.value;
+          var sound = document.myForm.txtSound.value;
+          var part = document.myForm.txtPart.value;
+          var vehicle = document.myForm.txtVehicle.value;
+          var animal = document.myForm.txtAnimal.value;
+          var story = " ";
+
+          story = " One day, a person named  ";
+            story += person;
+            story += "  was walking down the street. Suddenly,  ";
+            story += person;
+            story += " herad an awful  ";
+            story += sound;
+            story += " sound. ";
+            story += person;
+            story += " looked around and saw that the ";
+            story += sound;
+            story += " sound was coming from a ";
+            story += vehicle;
+            story += " careening madly down the street. ";
+            story += person;
+            story += " 's fear turned to terror as ";
+            story += person;
+            story += "realized that the ";
+            story += vehicle;
+            story += "was driven by none other than the evil Super-";
+            story += animal;
+
+            document.myForm.txtStory.value = story; // ezzel a sorral adjuk vissza a JS megszerkesztett információt a html-nek
+        }
+
+      </script>
   </head>
   <body>
   <center>
@@ -23,7 +61,7 @@
 
               <tr>
                 <td>A body part</td>
-                <td><input type=text name=txtPart</td>
+                <td><input type=text name=txtPart></td>
               </tr>
 
               <tr>
@@ -33,7 +71,7 @@
 
               <tr>
                 <td>A type of animal</td>
-                <td><input type=text name=txtAnimal</td>
+                <td><input type=text name=txtAnimal></td>
               </tr>
 
               <tr>
