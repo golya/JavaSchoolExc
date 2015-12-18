@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Radio box</title>
+  </head>
+  <body>
+    <h1>Size chooser</h1>
+
+      <form name="myForm">
+        <h3>Which size would you like?</h3>
+          <table border = 0>
+            <tr>
+              <td>
+                <input type="radio" name="radSize" value="Small">Small
+              </td>
+
+              <td>
+                <input type="radio" name="radSize" value="Medium">Medium
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="radio" name="radSize" value="Large">Large
+              </td>
+
+              <td>
+                <input type="radio" name="radSize" value="Jumbo">Jumbo
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <center>
+                  <input type="button" value="OK" onclick="processSize()">
+                </center>
+              </td>
+            </tr>
+          </table>
+
+          <textarea name="txtOutput" rows="8" cols="40"></textarea>
+      </form>
+
+
+  </body>
+</html>
