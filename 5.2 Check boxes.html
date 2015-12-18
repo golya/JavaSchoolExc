@@ -3,6 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Music Chooser</title>
+
+    <script type="text/javascript">
+
+      function processMusic () {
+
+        document.myForm.txtOutput.value = " ";
+
+              //ROCK
+        if (document.myForm.chkRock.checked == true) {
+        document.myForm.txtOutput.value += "You like ";
+        document.myForm.txtOutput.value += document.myForm.chkRock.value;
+        document.myForm.txtOutput.value +="\n";
+      } //end if
+
+            //COUNTRY
+        if (document.myForm.chkCountry.checked == true) {
+        document.myForm.txtOutput.value += "You like ";
+        document.myForm.txtOutput.value += document.myForm.chkCountry.value;
+        document.myForm.txtOutput.value +="\n";
+        } //end if
+
+            //RAP
+        if (document.myForm.chkRap.checked == true) {
+        document.myForm.txtOutput.value += "You like ";
+        document.myForm.txtOutput.value += document.myForm.chkRap.value;
+        document.myForm.txtOutput.value +="\n";
+        } //end if
+
+            //CLASSICAL
+        if (document.myForm.chkClassical.checked == true) {
+        document.myForm.txtOutput.value += "You like ";
+        document.myForm.txtOutput.value += document.myForm.chkClassical.value;
+        document.myForm.txtOutput.value +="\n";
+        } //end if
+
+            //BLUES
+        if (document.myForm.chkBlues.checked == true) {
+        document.myForm.txtOutput.value += "You like ";
+        document.myForm.txtOutput.value += document.myForm.chkBlues.value;
+        document.myForm.txtOutput.value +="\n";
+        } //end if
+      } //end function
+
+    </script>
   </head>
   <body>
     <h1>Music Chooser<hr></h1>
