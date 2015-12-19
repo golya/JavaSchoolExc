@@ -3,6 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Radio box</title>
+
+      <script type="text/javascript">
+
+        function processSize() {
+          // body...
+          var size;
+          var i;
+          var theOption;
+
+          for (var i = 0; i <= 3; i++) {
+            theOption = document.myForm.radSize[i];
+            if (theOption.checked == true ) {
+              size = theOption.value;
+            } //end if
+          } //end for
+
+          document.myForm.txtOutput.value = "OK, I'll get you the ";
+          document.myForm.txtOutput.value += size + "one";
+        } // end function
+
+      </script>
   </head>
   <body>
     <h1>Size chooser</h1>
