@@ -6,6 +6,13 @@
 
       <script type="text/javascript">
 
+          function changeColor() {
+            // body...
+            var theSelect = document.myForm.selColor;
+            var theOption = theSelect[theSelect.selectedIndex];
+            var theColor = theOption.value;
+            document.bgColor = theColor;
+          }
       </script>
   </head>
   <body>
@@ -26,6 +33,6 @@
 
           <input type="button" value="change color" onclick="changeColor()">
       </form>
-      
+
   </body>
 </html>
