@@ -12,7 +12,31 @@
             var theOption = theSelect[theSelect.selectedIndex];
             var theColor = theOption.value;
             document.bgColor = theColor;
-          }
+          }// changeColor vége
+
+          function changeColor2() {
+            // body...
+
+            //change color the fisrt selected color
+            var theSelect2 = document.myForm2.selColor;
+            var theOption2 = theSelect2[theSelect2.selectedIndex];
+            var theColor2 = theOption2.value;
+            document.bgColor = theColor2;
+
+            //list all the selected colors
+            var colorList = " ";
+            var i = 0;
+
+            for (var i = 0; i < theSelect2.length; i++) {
+              theOption2 = theSelect2.options[i];
+              if (theOption2.selected == true ) {
+                colorList += theOption2.value + "\n";
+              }//end if
+            } //end for
+
+            document.myForm2.txtOutput.value = colorList;
+          } // end function
+
       </script>
   </head>
   <body>
@@ -33,6 +57,23 @@
 
           <input type="button" value="change color" onclick="changeColor()">
       </form>
+
+      <h3>Please Select a color</h3>
+        <form name="myForm2">
+
+          <select name="selColor" multiple="7">
+            <option value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="indigo">indigo</option>
+            <option value="violet">violet</option>
+          </select>
+          <br>
+
+          <input type="button" value="change color" onclick="changeColor2()">
+          <textarea name="txtOutput" rows="8" cols="40"></textarea>      </form>
 
   </body>
 </html>
