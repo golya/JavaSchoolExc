@@ -3,6 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Rock Paper Scissors</title>
+
+      <script type="text/javascript">
+
+        function rpsApp() {
+          // body...
+          var userChoice;
+          var container;
+
+          for (var i = 0; i < 2; i++) {
+            container = document.myForm.chsOne[i];
+                if (container.checked == true) {
+                  userChoice = container.value;
+                } //end if
+              } //end for
+          document.myForm.gameOutput.value = "Ok your choice is  ";
+          document.myForm.gameOutput.value += userChoice;
+        } //end app
+
+      </script>
   </head>
   <body>
     <h1>Rock Paper Scissors game</h1>
@@ -11,7 +30,7 @@
         Write a Rock Paper Scissors game using form elements
       </p><br>
 
-    
+
       <center><img src="http://www.oykugumus.com/wp-content/uploads/2015/08/RockPaperScissors_Logo.jpg" alt="" /></center>
 
       <form name="myForm"><center>
@@ -28,6 +47,13 @@
 
               <td>
                 <input type="radio" name="chsOne" value="scissors">scissors
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <input type="button" value="I'm done" onclick="rpsApp()">
+
               </td>
             </tr>
 
