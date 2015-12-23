@@ -8,8 +8,9 @@
 
         function rpsApp() {
           // body...
-          var userChoice;
-          var container;
+          var userChoice; //ebbe tárolom a felhasználó választását
+          var container; // a kód egyszerűbb olvashatóságáért
+          var cmpChoice; //ebbe tárolom majd a gép választását
 
           for (var i = 0; i < 2; i++) {
             container = document.myForm.chsOne[i];
@@ -19,6 +20,26 @@
               } //end for
           document.myForm.gameOutput.value = "Ok your choice is  ";
           document.myForm.gameOutput.value += userChoice;
+
+          // a gép által adott válasz előállítása
+          var roll = Math.floor(Math.random()*3)+1; //1-3 közötti véletlen szám generálás
+          //alert(roll); //debug elem
+          switch (roll) {
+            case 1:
+              document.myForm.gameOutput.value += "\n My choice is ROCK";
+              break;
+
+            case 2:
+              document.myForm.gameOutput.value += "\n My choice is PAPER";
+              break;
+
+            case 3:
+              document.myForm.gameOutput.value += "\n My choice is SCISSORS";
+              break;
+            default:
+              document.myForm.gameOutput.value += "\n Ups something wrong!!!";
+
+          }
         } //end app
 
       </script>
